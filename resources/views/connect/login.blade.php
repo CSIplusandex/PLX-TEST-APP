@@ -6,7 +6,7 @@
 	<div class="container"style="color: red;text-align: center;margin: 20px;border: 2px black solid; width: 20%;;">
 		<p>to</p>
 	</div>
-	<div class="container"style="color: red;text-align: center;margin: 20px;border: 2px black solid; width: 20%;">
+	<div class="container"style="color: blue;text-align: center;margin: 20px;border: 2px black solid; width: 20%;">
 		<p>{{ config('cms.app_name')}}!!</p>
 	</div>
 </div>
