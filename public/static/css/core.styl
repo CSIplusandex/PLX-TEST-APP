@@ -1,3 +1,4 @@
+/*comando en cmd: stylus core.styl -c -w */
 :root{
 	--c1: #0d4090
 	--c2: #6f6d7d
@@ -91,3 +92,68 @@
 	justify-content center
 	a
 		font-weight 400
+		
+.form-check
+	.form-check-imput
+		&:checked
+			background-color var(--c1)
+			border-color var(--c1)
+		&:focus
+			box-shadow none
+			outline none
+			
+.loader_action
+	align-items center
+	display none
+	background-color rgba(0, 0, 0, .5)			
+	justify-content center
+	height 100vh
+	position fixed
+	widht 100%
+	z-index 999990
+	.action
+		align-items center
+		display flex
+		background-color #fff
+		border-radius 8px
+		box-sizing border-box
+		justify-content center
+		padding 16px
+		overflow hidden
+		width 330px
+		.col
+			display block
+			flex initial
+			color #333
+			float left
+			&:first-child
+				width 40px
+				img
+					display block
+					width 100%
+			&:last-child
+				margin-left 5%
+				position 
+				width calc(95% - 40px) 
+
+.loader_action_animation_show
+	animation-timing-function easy-in-out
+	animation action_show 0.3s forwards
+.loader_action_animation_hide
+	animation-timing-function easy-in-out
+	animation action_hide 0.3s forwards
+.align-center
+	display flex
+	justify-self center
+.hide
+	display none !important
+
+@keyframes action_show{
+		0%{opacity: 0}
+		100%{opacity: 1}
+}
+
+@keyframes action_hide{
+		0%{opacity: 1}
+		100%{opacity: 0}
+}	
